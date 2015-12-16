@@ -81,6 +81,7 @@ class DMSSiteTreeExtension extends DataExtension {
 				$sortableComponent->setUsePagination(false)->setForceRedraw(true);
 			}
 			$gridFieldConfig->addComponent($sortableComponent);
+			$gridFieldConfig->removeComponentsByType('GridFieldOrderableRows');
 		}
 
 		// HACK: Create a singleton of DMSDocument to ensure extensions are applied before we try to get display fields.
