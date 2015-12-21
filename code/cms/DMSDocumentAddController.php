@@ -163,7 +163,7 @@ class DMSDocumentAddController extends LeftAndMain {
 	
 	public function Backlink(){
 		$pageID = $this->currentPageID();
-		return singleton('CMSPagesController')->Link().'edit/show/'.$pageID;
+		return singleton('CMSPagesController')->Link('edit/show/'.$pageID);
 	}
 
 	public function documentautocomplete() {

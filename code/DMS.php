@@ -48,7 +48,6 @@ class DMS implements DMSInterface {
 	 * Takes a File object or a String (path to a file) and copies it into the DMS. The original file remains unchanged.
 	 * When storing a document, sets the fields on the File has "tag" metadata.
 	 * @param $file File object, or String that is path to a file to store, e.g. "assets/documents/industry/supplied-v1-0.pdf"
-
 	 */
 	function storeDocument($file) {
 		$filePath = self::transform_file_to_file_path($file);
