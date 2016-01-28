@@ -296,7 +296,6 @@ class DMSUploadField_ItemHandler extends UploadField_ItemHandler {
 		$file = $this->getItem();
 		
 		// Get form components
-		Debug::dump('test');
 		$fields = $this->parent->getDMSFileEditFields($file);
 		$actions = $this->parent->getDMSFileEditActions($file);
 		$validator = $this->parent->getDMSFileEditValidator($file);
